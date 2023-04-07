@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/rel123"
+    android:layout_height="match_parent"
+    tools:context=".SavedFileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:onClick="clearall"
+            android:layout_margin="10dp"
+            android:src="@drawable/delete"
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:fontFamily="@font/font1"
+        android:text="Saved Files !"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle2"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/programiz"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:onClick="programiz"
+                android:src="@drawable/c1" />
+
+            <ImageView
+                android:id="@+id/onlinebdg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:onClick="onlingedgb"
+                android:src="@drawable/onlinedbg" />
+
+            <ImageView
+                android:id="@+id/tutorialpoint"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:onClick="tutorialpoint"
+                android:src="@drawable/c2" />
+
+            <ImageView
+                android:id="@+id/codechef"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:onClick="codechef"
+                android:src="@drawable/c3" />
+
+            <ImageView
+                android:id="@+id/gfg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:onClick="gfg"
+                android:src="@drawable/c4" />
+
+            <ImageView
+                android:id="@+id/interviewbit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:onClick="interviewbit"
+                android:src="@drawable/c5" />
+
+            <ImageView
+                android:id="@+id/iw3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:onClick="w3school"
+                android:src="@drawable/c6" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:onClick="joodle"
+                android:src="@drawable/joodle" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:onClick="onecompiler"
+                android:src="@drawable/onecompiler" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</RelativeLayout>
